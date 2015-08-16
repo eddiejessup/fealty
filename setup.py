@@ -26,29 +26,29 @@ test_requirements = [
 ]
 
 extensions = cythonize([
-    Extension("fealty.field_numerics",
-              ["fealty/field_numerics.pyx"],
+    Extension('fealty.field_numerics',
+              ['fealty/field_numerics.pyx'],
               include_dirs=[numpy.get_include()]),
-    Extension("fealty.walled_field_numerics",
-              ["fealty/walled_field_numerics.pyx"],
+    Extension('fealty.walled_field_numerics',
+              ['fealty/walled_field_numerics.pyx'],
               include_dirs=[numpy.get_include()]),
-    Extension("fealty.lattice_numerics",
-              ["fealty/lattice_numerics.pyx"],
+    Extension('fealty.lattice_numerics',
+              ['fealty/lattice_numerics.pyx'],
               include_dirs=[numpy.get_include()]),
 ])
 
 setup(
     name='fealty',
     version='0.1.1',
-    description="Discretised field utilities",
+    description='Discretised field utilities',
     long_description=readme + '\n\n' + history,
-    author="Elliot Marsden",
+    author='Elliot Marsden',
     author_email='elliot.marsden@gmail.com',
     url='https://github.com/eddiejessup/fealty',
     packages=setuptools.find_packages(exclude=['docs', 'tests']),
     include_package_data=True,
     install_requires=requirements,
-    license="BSD",
+    license='BSD',
     zip_safe=False,
     keywords='fealty',
     classifiers=[
@@ -56,7 +56,7 @@ setup(
         'Intended Audience :: Developers',
         'License :: OSI Approved :: BSD License',
         'Natural Language :: English',
-        "Programming Language :: Python :: 2",
+        'Programming Language :: Python :: 2',
         'Programming Language :: Python :: 2.6',
         'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3',
