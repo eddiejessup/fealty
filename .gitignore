@@ -1,3 +1,6 @@
+# OS X
+.DS_Store
+
 # My Cython extensions
 fealty/lattice_numerics.c
 fealty/field_numerics.c
