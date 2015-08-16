@@ -39,7 +39,7 @@ extensions = cythonize([
 
 setup(
     name='fealty',
-    version='0.1.1',
+    version='0.1.2',
     description='Discretised field utilities',
     long_description=readme + '\n\n' + history,
     author='Elliot Marsden',
